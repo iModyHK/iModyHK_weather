@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>التصويت على الطقس</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="weather-vote">
+        <h1>التصويت على الطقس</h1>
+        <div id="timer">الوقت المتبقي: <span id="time-left">60</span> ثانية</div>
+        <button onclick="voteWeather('CLEAR')">صافي (<span id="clear-votes">0</span>)</button>
+        <button onclick="voteWeather('EXTRASUNNY')">مشمس جدًا (<span id="extrasunny-votes">0</span>)</button>
+        <button onclick="voteWeather('CLOUDS')">غائم (<span id="clouds-votes">0</span>)</button>
+        <button onclick="voteWeather('OVERCAST')">مُلبد بالغيوم (<span id="overcast-votes">0</span>)</button>
+        <button onclick="voteWeather('RAIN')">ممطر (<span id="rain-votes">0</span>)</button>
+        <button onclick="voteWeather('CLEARING')">صحو (<span id="clearing-votes">0</span>)</button>
+        <button onclick="voteWeather('THUNDER')">عاصفة رعدية (<span id="thunder-votes">0</span>)</button>
+        <button onclick="voteWeather('SMOG')">ضباب دخاني (<span id="smog-votes">0</span>)</button>
+        <button onclick="voteWeather('FOGGY')">ضبابي (<span id="foggy-votes">0</span>)</button>
+        <button onclick="voteWeather('XMAS')">عيد الميلاد (<span id="xmas-votes">0</span>)</button>
+        <button onclick="voteWeather('SNOWLIGHT')">ثلج خفيف (<span id="snowlight-votes">0</span>)</button>
+        <button onclick="voteWeather('BLIZZARD')">عاصفة ثلجية (<span id="blizzard-votes">0</span>)</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
