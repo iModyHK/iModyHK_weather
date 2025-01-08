@@ -55,7 +55,7 @@ end)
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
-        if IsControlJustReleased(0, 168) then -- F7 key
+        if IsControlJustReleased(0, Config.Hotkey) then -- Hotkey
             ExecuteCommand('toggleWeatherVote')
         end
     end
